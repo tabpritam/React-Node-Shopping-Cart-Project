@@ -1,0 +1,109 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.form-wrapper {
+  background: #fff;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  min-width: 400px;
+}
+.form-container {
+  padding: 40px;
+}
+
+.form-toggle {
+  display: flex;
+  justify-content: start;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.login-btn,
+.signup-btn {
+  background: transparent;
+  border: 1px solid #f9cc47;
+  color: #222222;
+  border-radius: 4px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s;
+  cursor: pointer;
+}
+
+.login-btn.active,
+.signup-btn.active {
+  background: #f9cc47;
+  color: #fff;
+}
+
+.signup-btn.active {
+  background: #f9cc47;
+  color: #fff;
+}
+
+.login-form,
+.signup-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-form div,
+.signup-form div {
+  font-size: 18px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+input {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+button {
+  background: #f9cc47;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s;
+
+  &:hover {
+    background: darken(#f9cc47, 10%);
+  }
+}
+.forgot-password-row {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 15px;
+  a {
+    font-weight: 400;
+    font-size: 14px;
+    cursor: pointer;
+  }
+}
+.forgot-password-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.close-btn {
+  display: flex;
+  justify-content: flex-end;
+  svg {
+    cursor: pointer;
+    font-size: 24px;
+  }
+}

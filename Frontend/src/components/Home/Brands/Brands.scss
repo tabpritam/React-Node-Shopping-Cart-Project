@@ -1,0 +1,28 @@
+@import "../../../css-config/mixins.scss";
+
+.brands-section {
+  padding: 107px 154px;
+  .brand-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .title {
+      font-size: 38px;
+      font-weight: 700;
+      color: #222222;
+    }
+    .view-all-btn {
+      color: #787878;
+      font-size: 16px;
+      font-weight: 500;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+  .brand-body {
+    display: flex;
+    gap: 30px;
+    margin-top: 50px;
+  }
+}

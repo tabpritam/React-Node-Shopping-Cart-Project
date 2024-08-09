@@ -1,0 +1,102 @@
+@import "../../css-config/mixins.scss";
+
+.header-container {
+  .header {
+    background-color: #fff;
+    padding: 42px 154px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    .left {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 45px;
+      .logo {
+        width: 241px;
+        height: auto;
+        cursor: pointer;
+      }
+      .search-bar {
+        .search-input {
+          width: 652px;
+          max-width: 652px;
+          height: 50px;
+          border: none;
+          background-color: #f8f8f8;
+          border-radius: 8px;
+          padding-left: 40px;
+          &:focus {
+            outline: none;
+          }
+        }
+        .search-icon {
+          position: relative;
+          left: -35px;
+          top: 3px;
+          color: #222222;
+        }
+      }
+    }
+    .right {
+      display: flex;
+      justify-content: end;
+      align-items: center;
+      gap: 15px;
+      .auth-modal-btn {
+        background-color: #f9cc47;
+        color: #ffffff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+      }
+      .contact-number {
+        font-size: 16px;
+        font-weight: 600;
+        color: #222222;
+      }
+      .info {
+        display: flex;
+        gap: 15px;
+        ul {
+          list-style: none;
+          cursor: pointer;
+          display: flex;
+          gap: 20px;
+          li {
+            width: 36px;
+            height: 36px;
+            background-color: #f1f1f1;
+            border-radius: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            svg {
+              position: absolute;
+              color: #222222;
+            }
+            .count {
+              position: relative;
+              top: -14px;
+              right: -14px;
+              height: 17px;
+              width: 17px;
+              background-color: #ffc43f;
+              border-radius: 50px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              span {
+                font-size: 10px;
+                font-weight: 600;
+                margin: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

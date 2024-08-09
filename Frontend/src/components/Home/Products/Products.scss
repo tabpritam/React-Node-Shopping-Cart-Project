@@ -1,0 +1,17 @@
+.products-container {
+  margin-top: 20px;
+  padding: 107px 154px;
+  .products-header {
+    .title {
+      font-size: 38px;
+      font-weight: 700;
+      color: #222222;
+    }
+  }
+  .products {
+    margin-top: 67px;
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+}

@@ -1,0 +1,31 @@
+@import "../../../../css-config/mixins.scss";
+.brand-card {
+  gap: 15px;
+  background: #ffffff;
+  border: 1px solid #fbfbfb;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+  border-radius: 8px;
+  &:hover {
+    box-shadow: 0px 5px 22px rgba(0, 0, 0, 0.04);
+    cursor: pointer;
+  }
+  .brand-img {
+    width: 162px;
+    height: auto;
+  }
+  .brand-details {
+    .light-text {
+      color: #c7c7c7;
+      font-size: 14px;
+      font-weight: 500;
+    }
+    .title {
+      font-size: 17px;
+      font-weight: 500;
+    }
+  }
+}

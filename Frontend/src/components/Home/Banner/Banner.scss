@@ -1,0 +1,19 @@
+@import "../../../css-config/mixins.scss";
+
+.banner-section {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 107px 0;
+  background-image: url("../../../assets/banner-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+}
